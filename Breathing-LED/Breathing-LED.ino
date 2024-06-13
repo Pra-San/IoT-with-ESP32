@@ -4,7 +4,7 @@ void setup() {
   int n=sizeof(leds);
   ledcSetup(chn,1000,8);
   for(int i = 0;i<n;i++){
-    ledcAttach(leds[i],chn)
+    ledcAttachPin(leds[i],chn);
   }
 
 }
